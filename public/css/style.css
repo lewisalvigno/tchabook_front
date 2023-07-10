@@ -1,0 +1,827 @@
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&display=swap');
+
+.body{
+    margin: 0;
+    font-family: 'JetBrains Mono', monospace;
+}
+#main_box{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #1F1D1C;
+}
+
+#first{
+
+    height: 38vh;
+    width: 100vw;
+    background:url("../img/logins/im0.png");
+    background-size: cover;
+}
+
+/* second part of page */
+
+#second{
+
+    margin-top: 2vh;
+    color: white;
+    font-family: 'JetBrains Mono', monospace;
+
+
+}
+#second>div:nth-child(1){
+    margin-left: 25vw;
+} 
+#app_name{
+    font-size: 2rem;
+}
+#mini_logo{
+    width: 15vw;
+
+}
+
+/* third part of page for credentials */
+
+#third{
+
+    position: absolute;
+    bottom: 0;
+    height: 45vh;
+    width: 100vw;
+    background-color: #262729;
+    border-top-left-radius: 1.4rem;
+    border-top-right-radius: 1.4rem;
+    display: flex;
+    flex-direction: column;
+align-items: center;
+
+}
+
+#third>span{
+    color: white;
+}
+
+#third>span:nth-child(1){
+    font-size: 1.2rem;
+    font-family: 'JetBrains Mono', monospace;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+
+}
+
+.fields{
+    margin-top: 1vh;
+    width: 92vw;
+    height: 7.1vh;
+    border-radius: 0.6rem;
+    border: none;
+    padding-left: 2vw;
+    background-color: #bab6b652;
+}
+
+
+#pwd>input{
+
+    width: 82vw;
+    margin-left: 5vw;
+
+}
+.btn{
+    padding: 0.6rem;
+    border: none;
+    background-color: #F27128;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 0.4rem;
+    margin-top: 2vh;
+    box-shadow: 3px 2px 14px 4px rgba(12, 12, 12, 0.35);
+}
+
+#redir_inscription{
+    font-family: 'JetBrains Mono', monospace;
+font-size: 0.6rem;
+
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    font-family: 'JetBrains Mono', monospace;
+color: #5C4E46;
+}
+
+
+#log_opt{
+
+    display: flex;
+    flex-direction: row;
+}
+
+#log_opt>span{
+    position: absolute;
+    left: 25vw;
+    color: white;
+    font-weight: 600;
+}
+
+
+
+.so_list{
+
+    display: flex;
+    flex-direction: row;
+    padding: 0.3rem;
+    position: absolute;
+bottom: 3.9rem;
+left: 40vw;
+
+}
+
+.so_co{
+    width: 8vw;
+
+    border-radius: 50%;
+    border: 0.1rem solid #F27128 ;
+    margin-left: 0.4rem;
+}
+
+
+/* addition content for floating div */
+
+#preloader{
+
+
+    display: none;
+
+margin: 0;
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.646);
+
+}
+
+#preloader > img{
+    width: 15vw;
+
+    margin-top: 50vh;
+    margin-left: 45vw;
+
+
+}
+
+
+#settings{
+
+    position: absolute;
+    z-index: 2;
+    width: 70vw;
+    height: 30vh;
+    background-color: rgb(40, 40, 43);
+    padding-top: 5vh;
+    margin-top: 25vh;
+    margin-left: 15vw;
+    border-radius: 4rem;
+    text-align: center;
+    display: none;
+    box-shadow: 2px 3px 8px 4px rgba(0, 0, 0, 0.1);
+}
+
+#settings > div >a{
+    color: rgb(150, 131, 113);
+    font-size: 120%;
+    transition: all 0.2s; 
+    text-decoration: none;
+    
+}
+
+ hr{
+     height: 0.1rem;
+     background-color: rgb(255, 126, 39);
+     border: none;
+}
+
+#settings > div >a:hover{
+    cursor: pointer;
+    color: rgb(230, 173, 117);
+
+}
+#settings > button{
+    background-color: rgb(255, 126, 39);
+    border: none;
+    color: white;
+    font-weight: 700;
+    padding: 0.4rem;
+    border-radius: 0.2rem;
+    transition: all .2s;
+}
+
+#settings > button:hover{
+    background-color: rgb(199, 106, 44);
+    cursor: pointer;
+}
+
+/* css for main page where all pages will display */
+
+
+
+#bottom_bar{
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 7vh;
+    border-top-left-radius:1.5rem ;
+    border-top-right-radius:1.5rem;
+    background-color: #252525;
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+#top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 4vh;
+    padding-top: 0.8rem;
+    padding-left: 0.7rem;
+
+}
+
+#top > i{
+    color: rgb(199, 106, 44);
+
+}
+
+#top > span{
+    color: rgb(199, 106, 44);
+    position: absolute;
+    bottom: 1vh;
+    font-weight: 800;
+    left: 9vw;
+    font-family: 'JetBrains Mono', monospace;
+
+
+}
+
+#bottom_bar > div {
+
+    padding-left: 2.4rem;
+    padding-top: 0.8rem;
+}
+ 
+#bottom_bar > div > a> i{
+    padding-left: 2.2rem;
+    color: white;
+    transition: all 0.1s ease-out;
+}
+
+#bottom_bar > div > a>i:hover{
+    color: rgb(199, 106, 44);
+}
+
+#bottom_bar > div > a{
+    text-decoration: none;
+}
+
+#mid_box{
+
+    color: #5C4E46;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 45vh;
+    font-family: 'JetBrains Mono', monospace;
+
+}
+
+#mid_box > i{
+
+    color: #5C4E46;
+
+}
+
+/* header tab component */
+
+#h_tab{
+
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: #252525;
+    display: flex;
+    flex-direction: row;
+
+}
+
+#title{
+    position: absolute;
+    color: #F27128;
+    font-weight: 100;
+    font-size: 2rem;
+    left: 3.5vw;
+    top: 2.7vh;
+    font-family:"demo_blue";
+
+}
+
+#profil{
+     border-radius: 50%;
+     width: 12.5vw;
+    height: 5.5vh;
+    border: 0.2em solid #F27128;
+    right: 0;
+    top: 1.7vh;
+    background-size: cover;
+    position: absolute;
+}
+
+#profil>img{
+
+    border-radius: 50%;
+     width: 12.5vw;
+    height: 5.5vh;
+    border: 0.2em solid #F27128;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&family=Sora:wght@400;700&display=swap');
+/* font-family: 'JetBrains Mono', monospace;
+font-family: 'Sora', sans-serif; */
+
+*{
+font-family: 'Sora', sans-serif;
+}
+
+@font-face {
+    font-family:"demo_blue";
+    src: url("../Demo_Fonts/Fontspring-DEMO-blue_vinyl_bold_ps_ot.otf");
+}
+/* Users profil pic display section */
+
+#u_tab{
+
+    top: 0;
+    width: 100%;
+    height: 12vh;
+    border-bottom: 0.001em solid rgba(255, 213, 200, 0.599);
+    display: flex;
+    flex-direction: row;
+
+}
+
+.pp {
+ margin-left: 0.4rem;
+ margin-top: 1vh;
+ border-radius: 50%;
+  width: 15.8vw;
+ height: 7.5vh;
+ border: 0.2em solid #F27128;
+ background-size: cover;
+ background-position: center;
+}
+
+/* .pp > img{
+
+    margin-top: 1vh;
+    border-radius: 50%;
+     width: 15.8vw;
+    height: 7.5vh;
+    border: 0.2em solid #F27128;
+
+} */
+/* 
+.pp > figcaption{
+    color: white;
+    font-size: 0.65rem;
+    font-weight: 200;
+    margin-left: 5vw;
+} */
+
+#n_post{
+    margin-top: 1vh;
+    margin-left: 1.8vw;
+    width: 15.8vw;
+    height: 7.5vh;
+    background-size: cover;
+    border-radius: 50%;
+    border: 0.2em solid white;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#n_fig{
+
+    color: white;
+    font-size: 0.65rem;
+    font-weight: 200;
+    margin-top: 0.47vh;
+    margin-left: 5.2vw;
+
+}
+
+.n_fig{
+
+    color: white;
+    font-size: 0.65rem;
+    font-weight: 200;
+    margin-top: 0.47vh;
+    margin-left: 5.8vw;
+
+}
+
+#post{
+
+    border-radius: 0.7rem;
+    background-color: #252525;
+    height: 67.7vh;
+    width: 98vw;
+    margin-top: 1.7vh;
+    margin-left: 1vw;
+    box-shadow: 2px 1px 10px 8px rgba(0, 0, 0, 0.17);
+}
+
+#post_box{
+
+    position: absolute;
+    width: 100vw;
+    height: 69.4vh;
+    /* background-color: #252525; */
+    overflow: scroll;
+
+}
+
+#u_infos{
+
+    top: 0;
+    width: 100%;
+    height: 9vh;
+    /* border-bottom: 0.001em solid rgba(255, 213, 200, 0.599); */
+    display: flex;
+    flex-direction: row;
+
+}
+
+#u_infos > div{
+
+    margin-top: 1vh;
+    margin-left: 1.5vw;
+    border-radius: 50%;
+     width: 14vw;
+    height: 6.5vh;
+    border: 0.2em solid #F27128;
+    background-size: cover;
+
+}
+
+#u_infos > span{
+    color: white;
+    font-weight: 200;
+    font-size: 1.2rem;
+    margin-top: 3.5vh;
+    margin-left: 2vw;
+
+}
+
+#post_content{
+
+    width: 100%;
+    height: 51.8vh;
+    border-top: 0.1rem solid #f272288f;
+    border-bottom: 0.1rem solid #f27228b1;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#text_sec{
+    text-align: left;
+    margin-top: 0.5vh;
+    width: 100%;
+    height: 10.8vh;
+    color: white;
+    font-weight: 400;
+}
+
+#img_sec{
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(131, 75, 75);
+    background-size: cover;
+}
+
+/* still same post content css, but likes and comments part plus post time & date */
+
+#reactions {
+
+    display: flex;
+    flex-direction: row;
+    color: white;
+
+}
+.likes{
+    margin-top: 0.4vh;
+    color: white;
+    font-weight: 700;
+    margin-left: 3.7vw;
+}
+
+#time{
+    font-weight: 700;
+    margin-left: 37vw;
+
+}
+
+.likes >i {
+    font-size: 1.58rem;
+}
+
+#likes{
+    color: #F27128;
+}
+
+#comments{
+    color: #ffffff;
+}
+
+.likes > figcaption{
+    font-size: 0.8rem;
+    margin-left: 1.5vw;
+}
+
+
+
+
+/* message page content starts */
+
+#mess{
+
+    /* position: absolute; */
+    width: 100%;
+    height: 90vh;
+    background-color:#1F1D1C;
+
+}
+
+#mess_title{
+
+    font-weight: 100;
+    color: white;
+    font-size: 1.75rem;
+    margin-left: 34.4%;
+    margin-top: 2.5vh;
+}
+
+#online_u{
+    display: flex;
+    flex-direction: row;
+    padding-left: 0.5rem;
+    padding-bottom: 0.7vh;
+}
+
+#mess_list{
+
+    width: 100%;
+    height: 68vh;
+    background-color:#1F1D1C;
+    overflow: scroll;
+}
+
+#mess_box{
+    display: flex;
+    flex-direction: row;
+    width: 97%;
+    height: 10vh;
+    margin-left: 1.5vw;
+    margin-top: 0.5vh;
+    margin-bottom: 1.5vh;
+    border-radius: 0.8rem;
+    background-color: #252525;
+    box-shadow: 2px 0px 6px 3px rgba(0, 0, 0, 0.24);
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0.9vh;
+    position: relative;
+
+}
+
+/* google font for message preview text and time ond message box */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap');
+
+#mess_box > span{
+    font-weight: 600;
+    color: white;
+    font-size: 1.05rem;
+    
+}
+#u_pp{
+    position: absolute;
+    left: 0;
+}
+
+#mess_short{
+    position: absolute;
+    left: 21.6vw;
+    font-family: 'Montserrat Alternates', sans-serif;
+
+}
+
+#time{
+    position: absolute;
+    right: 6vw;
+    font-family: 'Montserrat Alternates', sans-serif;
+
+}
+
+
+
+
+/* message page content ends here */
+
+
+
+
+/* Now, search user page css starts here and same css also applied to notifications
+page elements!!   */
+
+#search{
+
+    width: 100%;
+    height: 88vh;
+    position: relative;
+    background-color:#1F1D1C;
+
+}
+
+
+#search_box{
+
+    display: flex;
+    flex-direction: row;
+    width: 97%;
+    height: 7.2vh;
+    margin-left: 1.5vw;
+    margin-top: 0.9vh;
+    margin-bottom: 1.5vh;
+    border-radius: 1rem;
+    background-color: #312e2eae;
+    box-shadow: 2px 0px 6px 3px rgba(0, 0, 0, 0.24);
+    position: relative;
+    align-items: center;
+}
+
+#search_box > input{
+    position: absolute;
+    height: 7.2vh;
+    width: 94%;
+    left: 0;
+    background-color: #312e2eae;
+    border-radius: 1rem;
+    /* border-bottom-left-radius: 1rem; */
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding-left: 5vw;
+    border: none;
+
+}
+
+#search_box > input:hover{
+    border: none;
+}
+
+#search_box > i{
+    position: absolute;
+    right: 3vw;
+    color: rgb(106, 85, 78);
+    transition: all 0.1s ease-out;
+    z-index: 1;
+}
+
+#search_results{
+
+    width: 100%;
+    height: 68vh;
+    background-color:#1F1D1C;
+    overflow: scroll;
+    padding-top: 0.8vh;
+
+}
+
+#u_search_inf{
+
+    display: flex;
+    flex-direction: row;
+    width: 97%;
+    height: 9vh;
+    margin-left: 1.5vw;
+    margin-bottom: .5vh;
+    border-radius: 0.8rem;
+    background-color: #252525;
+    box-shadow: 2px 0px 6px 3px rgba(0, 0, 0, 0.24);
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0.9vh;
+    position: relative;
+}
+
+#u_search_inf > span{
+    font-weight: 600;
+    color: white;
+    font-size: 1.05rem;
+
+}
+
+.pp_search{
+
+    margin-left: 0.4rem;
+ margin-top: 1vh;
+ border-radius: 50%;
+  width: 15vw;
+ height: 6.7vh;
+ border: 0.2em solid #F27128;
+ background-size: cover;
+ background-position: center;
+    
+}
+/* search user page css ends here */
+
+/* notif page only css here not mixed */
+
+#notif{
+
+    width: 100%;
+    height: 73.7vh;
+    position: relative;
+    background-color:#1F1D1C;
+    padding-top: 1.4vh;
+    overflow: scroll;
+
+}
+
+#notif_title{
+
+    font-weight: 700;
+    color: white;
+    font-size: 1.75rem;
+    margin-left: 31.6vw;
+
+}
+
+#notif_box{
+
+    display: flex;
+    flex-direction: row;
+    width: 97%;
+    height: 9vh;
+    margin-left: 1.5vw;
+    margin-bottom: .5vh;
+    border-radius: 0.8rem;
+    background-color: #252525;
+    box-shadow: 2px 0px 6px 3px rgba(0, 0, 0, 0.24);
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0.9vh;
+    position: relative;
+}
+
+#notif_content{    
+    position: absolute;
+    left: 2.4vw;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 1.45rem;
+
+}
+
+#notif_time{
+    
+    position: absolute;
+    right: 1.5vw;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
+    color: #F27128;
+    font-size: 1.35rem;
+}
+/* notif page only css here not mixed */
+
